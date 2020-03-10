@@ -9,9 +9,16 @@ export class UmfPayWeb extends WebPlugin implements UmfPayPlugin {
     });
   }
 
-  async echo(options: { value: string }): Promise<{value: string}> {
-    console.log('ECHO', options);
-    return options;
+  init(options: { appId: string, isDebug: boolean }): any { 
+      
+  }
+
+  doWechatPayOrder(options: { merId: string, merCustId: string, tradeNo: string, amount: string, sign: string }): Promise<{}> { 
+    return null;
+  }
+
+  doAlipay(options: { merId: string, merCustId: string, tradeNo: string, amount: string, sign: string }): Promise<{}> { 
+    return null;
   }
 }
 
