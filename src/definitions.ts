@@ -5,7 +5,7 @@ declare module "@capacitor/core" {
 }
 
 export interface UmfPayPlugin {
-  init(options: { appId: string,isDebug:boolean });
-  doWechatPayOrder(options: { merId: string,merCustId:string,tradeNo: string,amount:string,sign: string }):Promise<{}>;
-  doAlipay(options: { merId: string,merCustId:string,tradeNo: string,amount:string,sign: string }):Promise<{}>;
+  init(options: { appId: string, isDebug: boolean }): any;
+  doWechatPayOrder(options: { merId: string, merCustId: string, tradeNo: string, amount: string, sign: string }): Promise<{}>;
+  doAlipay(options: { merId: string, merCustId: string, tradeNo: string, amount: string, sign: string }): Promise<{}>;
 }
