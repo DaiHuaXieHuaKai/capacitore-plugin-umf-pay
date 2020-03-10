@@ -119,6 +119,9 @@
       <find>activityR</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -137,6 +140,7 @@
     <option name="width" value="1934" />
     <option name="height" value="831" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -169,6 +173,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="D:/adt/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Dependencies" />
@@ -272,7 +277,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.33848614" />
@@ -289,7 +294,7 @@
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32924107" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Debug" order="4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.3470982" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.34787473" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
