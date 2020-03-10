@@ -1,5 +1,5 @@
 import { WebPlugin } from '@capacitor/core';
-import { UmfPayPlugin } from './definitions';
+import { UmfPayPlugin, InitOptions, PayOptions } from './definitions';
 
 export class UmfPayWeb extends WebPlugin implements UmfPayPlugin {
   constructor() {
@@ -9,16 +9,18 @@ export class UmfPayWeb extends WebPlugin implements UmfPayPlugin {
     });
   }
 
-  init(options: { appId: string, isDebug: boolean }): any { 
-      
+  init(options: InitOptions): void { 
+    console.log(options);
   }
 
-  doWechatPayOrder(options: { merId: string, merCustId: string, tradeNo: string, amount: string, sign: string }): Promise<{}> { 
-    return null;
+  doWechatPayOrder(options: PayOptions): Promise<any> { 
+    console.log(options);
+    return;
   }
 
-  doAlipay(options: { merId: string, merCustId: string, tradeNo: string, amount: string, sign: string }): Promise<{}> { 
-    return null;
+  doAlipay(options: PayOptions): Promise<any> { 
+    console.log(options);
+    return;
   }
 }
 
