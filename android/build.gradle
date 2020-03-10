@@ -51,7 +51,7 @@ repositories {
 
 
 dependencies {
-    implementation project('umfPay')
+    implementation project(':umfPay')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':capacitor-android')
     testImplementation 'junit:junit:4.12'

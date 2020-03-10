@@ -1,2 +1,3 @@
-include ':capacitor-android',"umfPay"
+include ':capacitor-android',":umfPay"
 project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/android/capacitor')
+project(':umfPay').projectDir = new File('umfPay')
