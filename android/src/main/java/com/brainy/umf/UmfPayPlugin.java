@@ -20,15 +20,15 @@ public class UmfPayPlugin extends Plugin {
     private static final String DEBUG_TAG = "UMF_PAY";
 
     @PluginMethod()
-    public void init(PluginCall call){
-        Log.d(DEBUG_TAG,"enter init function");
-        String appId = call.getString("appId");
-        boolean isDebug = call.getBoolean("isDebug",false);
-        Log.d(DEBUG_TAG,"appId:"+appId);
-        if(appId == null){
-            Log.d(DEBUG_TAG, "handling request permission result");
-        }else{
-            saveCall(call);
+    public void init(PluginCall call) {
+        Log.d(DEBUG_TAG, "enter init function");
+        String appId = call.getString("appId", "");
+        boolean isDebug = call.getBoolean("isDebug", false);
+        Log.d(DEBUG_TAG, "appId:" + appId);
+        if (appId == null || appId == "") {
+            Log.d(DEBUG_TAG, "appId is empty");
+            call.reject("appId is empty");
+        } else {
             UmfPay.setDebug(isDebug);
             UmfPay.init((Application) getContext());
             UmfPay.setWeChatAppId(appId);
@@ -36,30 +36,36 @@ public class UmfPayPlugin extends Plugin {
     }
 
     /*
-    * 微信支付
-    * */
+     * 微信支付
+     * */
     @PluginMethod()
-    public void doWechatPayOrder(PluginCall call){
-        Log.d(DEBUG_TAG,"enter doWechatPayOrder function");
+    public void doWechatPayOrder(PluginCall call) {
+        Log.d(DEBUG_TAG, "enter doWechatPayOrder function");
+        saveCall(call);
         String merId = call.getString("merId");
         String merCustId = call.getString("merCustId");
         String tradeNo = call.getString("tradeNo");
         String amount = call.getString("amount");
         String sign = call.getString("sign");
-        if(merId == null || merId == ""){
+        if (merId == null || merId == "") {
             call.reject("merId不能为空");
+            return;
         }
-        if(merCustId == null || merCustId == ""){
+        if (merCustId == null || merCustId == "") {
             call.reject("merCustId不能为空");
+            return;
         }
-        if(tradeNo == null || tradeNo == ""){
+        if (tradeNo == null || tradeNo == "") {
             call.reject("tradeNo不能为空");
+            return;
         }
-        if(amount == null || amount == ""){
+        if (amount == null || amount == "") {
             call.reject("amount不能为空");
+            return;
         }
-        if(sign == null || sign == ""){
+        if (sign == null || sign == "") {
             call.reject("sign不能为空");
+            return;
         }
         UmfRequest request = new UmfRequest();
         request.channel = UmfPay.CHANNEL_WECHAT;
@@ -76,25 +82,31 @@ public class UmfPayPlugin extends Plugin {
      */
     @PluginMethod()
     public void doAlipay(PluginCall call) {
+        saveCall(call);
         String merId = call.getString("merId");
         String merCustId = call.getString("merCustId");
         String tradeNo = call.getString("tradeNo");
         String amount = call.getString("amount");
         String sign = call.getString("sign");
-        if(merId == null || merId == ""){
+        if (merId == null || merId == "") {
             call.reject("merId不能为空");
+            return;
         }
-        if(merCustId == null || merCustId == ""){
+        if (merCustId == null || merCustId == "") {
             call.reject("merCustId不能为空");
+            return;
         }
-        if(tradeNo == null || tradeNo == ""){
+        if (tradeNo == null || tradeNo == "") {
             call.reject("tradeNo不能为空");
+            return;
         }
-        if(amount == null || amount == ""){
+        if (amount == null || amount == "") {
             call.reject("amount不能为空");
+            return;
         }
-        if(sign == null || sign == ""){
+        if (sign == null || sign == "") {
             call.reject("sign不能为空");
+            return;
         }
         UmfRequest request = new UmfRequest();
         request.channel = UmfPay.CHANNEL_ALIPAY;
@@ -113,10 +125,10 @@ public class UmfPayPlugin extends Plugin {
         if (requestCode == UmfPay.REQUEST_CODE) {
             if (resultCode == Activity.RESULT_OK) {
                 String result = data.getStringExtra(UmfPay.RESULT_MSG);
-                Log.i(DEBUG_TAG,"支付成功:"+result);
+                Log.i(DEBUG_TAG, "支付成功:" + result);
             } else {
                 String msg = data.getStringExtra(UmfPay.RESULT_MSG);
-                Log.i(DEBUG_TAG,"[商户]" + msg);
+                Log.i(DEBUG_TAG, "[商户]" + msg);
             }
         }
         //商户以商户后台查单结果为准
@@ -124,8 +136,8 @@ public class UmfPayPlugin extends Plugin {
             String payCode = data.getStringExtra(UmfPay.RESULT_CODE);
             String payMsg = data.getStringExtra(UmfPay.RESULT_MSG);
             JSObject result = new JSObject();
-            result.put("payCode",payCode);
-            result.put("payMsg",payMsg);
+            result.put("payCode", payCode);
+            result.put("payMsg", payMsg);
             saveCall.resolve(result);
         }
     }
