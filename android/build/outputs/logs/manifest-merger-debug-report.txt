@@ -35,14 +35,14 @@ ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManife
 		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:10:11-41
 	android:name
 		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:9:11-66
-activity-alias#商户自己的包名.wxapi.WXPayEntryActivity
+activity-alias#${applicationId}.wxapi.WXPayEntryActivity
 ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:11:7-14:79
 	android:exported
 		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:13:11-34
 	android:targetActivity
 		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:14:11-76
 	android:name
-		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:12:11-58
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:12:11-67
 uses-permission#android.permission.INTERNET
 ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:17:5-67
 	android:name

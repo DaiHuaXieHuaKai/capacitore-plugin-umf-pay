@@ -21,8 +21,10 @@ public class UmfPayPlugin extends Plugin {
 
     @PluginMethod()
     public void init(PluginCall call){
+        Log.d(DEBUG_TAG,"enter init function");
         String appId = call.getString("appId");
         boolean isDebug = call.getBoolean("isDebug",false);
+        Log.d(DEBUG_TAG,"appId:"+appId);
         if(appId == null){
             Log.d(DEBUG_TAG, "handling request permission result");
         }else{
@@ -38,6 +40,7 @@ public class UmfPayPlugin extends Plugin {
     * */
     @PluginMethod()
     public void doWechatPayOrder(PluginCall call){
+        Log.d(DEBUG_TAG,"enter doWechatPayOrder function");
         String merId = call.getString("merId");
         String merCustId = call.getString("merCustId");
         String tradeNo = call.getString("tradeNo");
