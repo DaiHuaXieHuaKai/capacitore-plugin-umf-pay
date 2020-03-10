@@ -16,17 +16,19 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
     <uses-permission android:name="android.permission.NFC" />
 
@@ -47,10 +49,6 @@
             android:name="com.umf.pay.sdk.wxapi.WXPayEntryActivity"
             android:launchMode="singleTop" />
 
-        <activity-alias
-            android:name="com.confplusapp.android.chinese.wxapi.WXPayEntryActivity"
-            android:exported="true"
-            android:targetActivity="com.umf.pay.sdk.wxapi.WXPayEntryActivity" />
         <activity-alias
             android:name="商户自己的包名.wxapi.WXPayEntryActivity"
             android:exported="true"

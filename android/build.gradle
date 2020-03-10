@@ -51,7 +51,7 @@ repositories {
 
 
 dependencies {
-    implementation project(':umfPay')
+    api 'com.umfintech.app:paysdk:2.0.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':capacitor-android')
     testImplementation 'junit:junit:4.12'

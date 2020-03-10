@@ -9,7 +9,7 @@
           android:name="com.umf.pay.sdk.wxapi.WXPayEntryActivity"
           android:launchMode="singleTop" />
       <activity-alias
-          android:name="商户自己的包名.wxapi.WXPayEntryActivity"
+          android:name="${applicationId}.wxapi.WXPayEntryActivity"
           android:exported="true"
           android:targetActivity="com.umf.pay.sdk.wxapi.WXPayEntryActivity" />
     </application>
