@@ -1,0 +1,71 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+	package
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:3:7-54
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:3-20:14
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:2:13-71
+application
+ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:4:5-15:19
+activity#com.umf.pay.sdk.UmfPayActivity
+ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:5:7-7:73
+	android:theme
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:7:11-70
+	android:name
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:6:11-56
+activity#com.umf.pay.sdk.wxapi.WXPayEntryActivity
+ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:8:7-10:44
+	android:launchMode
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:10:11-41
+	android:name
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:9:11-66
+activity-alias#商户自己的包名.wxapi.WXPayEntryActivity
+ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:11:7-14:79
+	android:exported
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:13:11-34
+	android:targetActivity
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:14:11-76
+	android:name
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:12:11-58
+uses-permission#android.permission.INTERNET
+ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:17:5-67
+	android:name
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:17:22-64
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:18:5-80
+	android:name
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:18:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:19:5-81
+	android:name
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml:19:22-78
+uses-sdk
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+		ADDED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml
+		INJECTED from D:\capacitor\capacitore-plugin-umf-pay\android\src\main\AndroidManifest.xml

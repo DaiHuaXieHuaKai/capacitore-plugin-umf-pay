@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.umfintech.app:pluginLibs:2.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pluginLibs-2.0.0.aar/cbe6b962081c08c5a13c3651acb2363b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pluginLibs-2.0.0.aar/cbe6b962081c08c5a13c3651acb2363b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pluginLibs-2.0.0.aar/cbe6b962081c08c5a13c3651acb2363b/jars/libs/UPPayAssistEx.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pluginLibs-2.0.0.aar/cbe6b962081c08c5a13c3651acb2363b/jars/libs/UPPayPluginExPro.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.umfintech.app/pluginLibs/2.0.0/5ef5d7d97bdec9ec89a44aa579fec59997c618ec/pluginLibs-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

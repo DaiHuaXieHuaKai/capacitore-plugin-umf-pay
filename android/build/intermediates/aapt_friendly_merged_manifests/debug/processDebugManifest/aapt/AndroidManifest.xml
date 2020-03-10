@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.brainy.umf.capacitorepluginumfpay"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+    <!-- //微信支付权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity
+            android:name="com.umf.pay.sdk.UmfPayActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umf.pay.sdk.wxapi.WXPayEntryActivity"
+            android:launchMode="singleTop" />
+
+        <activity-alias
+            android:name="商户自己的包名.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.umf.pay.sdk.wxapi.WXPayEntryActivity" />
+    </application>
+
+</manifest>
